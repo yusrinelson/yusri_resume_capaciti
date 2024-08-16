@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    /* background-color: black; */
+    color: white;
+}
+
+body {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-content {
+    display: flex;
+}
+
+aside div {
+    width: 200px;
+    height: 200px;
+    background-color: #dddddd;
+    border-radius: 100%;
+}
+
+aside p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.profile-box {
+    background-color: #77E375;
+    height: 35vh;
+    width: 30vw;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side {
+    background: black;
+    height: 100vh;
+    width: 30vw;
+    position: fixed;
+}
+
+.left-side ul {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.left-side li , a {
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 18px;
+    color: #8DE78B;
+    font-size: 25px;
+}
+
+.left-side li a:hover{
+    color: #CDF1CC;
+    transition: 0.5s;
+}
+
+/* CONTENT */
+.right-side {
+    margin-left: 30%;
+    background-color: black;
+    /* width: 70vw; */
+    border-left: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.right-side .intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.intro h1 {
+    font-size: 60px;
+}
+
+.intro h1:nth-last-child(2) {
+    color: #77E375;
+}
+
+button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px 15px 10px 15px;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #77E375;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #CDF1CC;
+    color: black;
+    transition: 1s;
+}
+.heading{
+    font-size: 60px;
+}
+.info-box{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 20px;
+}
+#about p{
+    width: 45vw;
+}
+.info-box h1{
+    color: #77E375;
+    margin-bottom: 10px;
+    
+}
+.info-box h5{
+    letter-spacing: 1px;
+}
+
+/* CONTACT ME */
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+form input{
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30vw;
+    height: 30px;
+}
+.conatact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact input::placeholder, textarea::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+#contact input:focus{
+    font-size: 1rem;
+}
+
+#contact textarea{
+    width: 30vw;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid white;
+}
